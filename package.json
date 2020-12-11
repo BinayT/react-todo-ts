@@ -1,4 +1,5 @@
 {
+  "homepage": "http://BinayT.github.io/react-todo-ts",
   "name": "react-w-ts",
   "version": "0.1.0",
   "private": true,
@@ -17,8 +18,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "tsc",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
